@@ -1,5 +1,6 @@
 import React, {useRef} from "react";
 import PropTypes from "prop-types";
+import {Methods} from "../components/Methods";
 
 export const FormRed = ({addFormIP, addFormMascaraRed}) => {
     FormRed.prototype = {
@@ -18,8 +19,9 @@ export const FormRed = ({addFormIP, addFormMascaraRed}) => {
     const num08 = useRef(String)
 
     function addFormRedHandle(e) {
-        addFormIP(num01, num02, num03, num04, e)
-        addFormMascaraRed(num05, num06, num07, num08, e)
+        addFormIP(Methods.addIp(num01, num02, num03, num04, e))
+        addFormMascaraRed(Methods.addMascaraRed(num05, num06, num07, num08, e))
+        console.log()
     }
 
     return (

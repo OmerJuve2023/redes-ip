@@ -1,4 +1,5 @@
 import {IPClass} from "../models/IP.class";
+import {MascaraRedClass} from "../models/MascaraRed.class";
 
 const addIp = (num1, num2, num3, num4, e) => {
     e.preventDefault()
@@ -9,11 +10,22 @@ const addIp = (num1, num2, num3, num4, e) => {
         num4.current.value
     )
 }
+const addMascaraRed = (num1, num2, num3, num4, e) => {
+    e.preventDefault()
+    return new MascaraRedClass(
+        num1.current.value,
+        num2.current.value,
+        num3.current.value,
+        num4.current.value
+    )
+}
 const addForm = (object, value) => {
     const temp = [...object]
-    return temp.push(value)
+    temp.push(value)
+    return temp
 }
 export const Methods = {
     addIp,
-    addForm
+    addForm,
+    addMascaraRed
 }

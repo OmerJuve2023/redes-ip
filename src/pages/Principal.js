@@ -1,18 +1,19 @@
 import React, {useState} from "react";
 import {FormRed} from "../container/FormRed";
 import {Methods} from "../components/Methods";
-import {findAllByDisplayValue} from "@testing-library/react";
 
 export const Principal = () => {
     const [ips, setIps] = useState([])
     const [mascaraRedes, setMascaraRedes] = useState([])
+    const [showMessage, setShowMessage] = useState(false)
+    const [showTable, setShowTable] = useState(false)
 
     function addIP(ip) {
-        Methods.addForm(ips, ip)
+        setIps(Methods.addForm(ips, ip))
     }
 
     function addMascaraRed(mascaraRed) {
-        Methods.addForm(mascaraRedes, mascaraRed)
+        setMascaraRedes(Methods.addForm(mascaraRedes, mascaraRed))
     }
 
     return (
