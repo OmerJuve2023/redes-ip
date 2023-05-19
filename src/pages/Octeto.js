@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Methods} from "../components/Methods";
 
-const Octeto = () => {
+export const Octeto = () => {
 
     let contador = 0
     let decimal = useState("")
@@ -305,5 +305,3 @@ const Octeto = () => {
         </div>
     )
 }
-
-export default Octeto;
