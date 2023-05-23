@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/OmerJuve2023/redes-ip/static/css/main.b9ae4e1c.css",
+    "main.js": "/OmerJuve2023/redes-ip/static/js/main.6e19259f.js",
+    "static/js/364.2b251608.chunk.js": "/OmerJuve2023/redes-ip/static/js/364.2b251608.chunk.js",
+    "static/js/787.c6718f11.chunk.js": "/OmerJuve2023/redes-ip/static/js/787.c6718f11.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/OmerJuve2023/redes-ip/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/OmerJuve2023/redes-ip/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/OmerJuve2023/redes-ip/index.html",
+    "main.b9ae4e1c.css.map": "/OmerJuve2023/redes-ip/static/css/main.b9ae4e1c.css.map",
+    "main.6e19259f.js.map": "/OmerJuve2023/redes-ip/static/js/main.6e19259f.js.map",
+    "364.2b251608.chunk.js.map": "/OmerJuve2023/redes-ip/static/js/364.2b251608.chunk.js.map",
+    "787.c6718f11.chunk.js.map": "/OmerJuve2023/redes-ip/static/js/787.c6718f11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9ae4e1c.css",
+    "static/js/main.6e19259f.js"
+  ]
+}
