@@ -2,7 +2,7 @@
   "name": "redes-ip",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://omerjuve2023.github.io/redes-ip/",
+  "homepage": "https://github.com/OmerJuve2023/redes-ip",
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.3.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,6 +19,8 @@
     "gh-pages": "^5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
