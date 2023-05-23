@@ -3,6 +3,7 @@ import {Methods} from "../components/Methods";
 import {ProcessBinary} from "../container/processBinary";
 import {ClaseIP} from "../container/ClaseIP";
 import {TableRed} from "../container/TableRed";
+import {DireccIp} from "../container/DireccIp";
 
 export function PPrincipal() {
     const [ip, setIP] = useState("");
@@ -28,6 +29,10 @@ export function PPrincipal() {
         setMaskNetwork("")
         setBinaryMaskNetwork("")
         setEnable(false)
+        localStorage.removeItem("nameNetwork")
+        localStorage.removeItem("host")
+        localStorage.removeItem("hosts")
+        localStorage.removeItem("numberBits")
     }
 
     return (
@@ -83,6 +88,9 @@ export function PPrincipal() {
                     </div>
                     <div>
                         <TableRed ip={binaryIP} mascara={binaryMaskNetwork}/>
+                    </div>
+                    <div>
+                        <DireccIp/>
                     </div>
                 </div>
             )}

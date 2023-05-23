@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import React, {useState} from "react";
 import {NumberBits} from "./NumberBits";
 import {NumberHost} from "./NumberHost";
+import {CantHosts} from "./CantHosts";
+import {CantSubredes} from "./CantSubredes";
 
 export const ClaseIP = ({ip, maskNetwork}) => {
 
@@ -36,6 +38,8 @@ export const ClaseIP = ({ip, maskNetwork}) => {
                     </tr>
                     <NumberBits mask={maskNetwork}/>
                     <NumberHost/>
+                    <CantHosts/>
+                    <CantSubredes/>
                     </tbody>
                 </table>
             </div>

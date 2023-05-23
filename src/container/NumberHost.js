@@ -4,7 +4,9 @@ export const NumberHost = () => {
     const hosts = parseInt(localStorage.getItem("numberBits"))
 
     function process(hosts) {
-        return 32 - hosts
+        const num = 32 - hosts
+        localStorage.setItem("hosts", num.toString())
+        return num
     }
 
     return (

@@ -156,7 +156,7 @@ export const ProcessBinary = ({ip, title}) => {
                 < button
                     style={{"backgroundColor": "#4935FF", "color": "#fff"}}
                     className={"my-3 btn"}
-                    onClick={viewTable}>{enableProcess ? "Ocultar Proceso" : "Mostrar Proceso"}
+                    onClick={viewTable}>{enableProcess ? "Ocultar" : "Mostrar"}
                 </button>
             </div>
             {processAll(p1)}
