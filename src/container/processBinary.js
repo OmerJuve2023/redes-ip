@@ -130,7 +130,8 @@ export const ProcessBinary = ({ip, title}) => {
             for (let i = 0; i < 8; i++) {
                 tables.push(
                     <td className={"fw-bold"}>
-                        <div style={{"textAlign": "center", "color": "#3586FF"}}>{valores[i]}</div>
+                        <div style={{"textAlign": "center",
+                            "color": "#3586FF"}}>{valores[i]}</div>
                     </td>
                 )
             }

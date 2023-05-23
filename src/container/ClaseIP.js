@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
 import React, {useState} from "react";
 import {NumberBits} from "./NumberBits";
+import {NumberHost} from "./NumberHost";
 
-export const ClaseIP = ({ip}) => {
+export const ClaseIP = ({ip, maskNetwork}) => {
 
     ClaseIP.prototype = {
-        ip: PropTypes.instanceOf(String).isRequired
+        ip: PropTypes.instanceOf(String).isRequired,
+        maskNetwork: PropTypes.instanceOf(String).isRequired
     }
     const one = ip.substring(0, 3)
     let rpta = useState("")
@@ -32,15 +34,8 @@ export const ClaseIP = ({ip}) => {
                             style={{"color": "#3586FF"}}
                         >{clase(one)}</td>
                     </tr>
-                    <tr>
-                        <th className={"h5"}
-                            style={{color: "#b4122f"}}
-                        >Bits destinados a Host
-                        </th>
-                        <td className={"h5 fw-bold"}
-                            style={{"color": "#3586FF"}}
-                        ><NumberBits clase={rpta}/></td>
-                    </tr>
+                    <NumberBits mask={maskNetwork}/>
+                    <NumberHost/>
                     </tbody>
                 </table>
             </div>

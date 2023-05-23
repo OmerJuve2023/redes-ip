@@ -73,7 +73,7 @@ export function PPrincipal() {
             {enable && (
                 <div className={"my-5"}>
                     <div>
-                        <ClaseIP ip={ip}/>
+                        <ClaseIP ip={ip} maskNetwork={maskNetwork}/>
                     </div>
                     <div>
                         <ProcessBinary ip={ip} title={"Proceso IP"}/>

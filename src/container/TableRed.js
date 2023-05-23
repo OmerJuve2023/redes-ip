@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import {NameRed} from "./NameRed";
 
 export const TableRed = ({ip, mascara}) => {
 
@@ -10,7 +11,7 @@ export const TableRed = ({ip, mascara}) => {
     const arrayIP = []
     const arrayMaskNetwork = []
     const arrayNameNetwork = []
-
+    let nameNetwork = ""
     for (let i = 0; i < ip.length; i++) {
         const char = ip[i]
         if (char !== ".") {
@@ -27,8 +28,12 @@ export const TableRed = ({ip, mascara}) => {
         let p01 = arrayIP.slice(i, i + 1)
         let p02 = arrayMaskNetwork.slice(i, i + 1)
         if (p01.toString() === "1" && p02.toString() === "1") {
+            nameNetwork += "1"
             arrayNameNetwork.push("1")
-        } else arrayNameNetwork.push("0")
+        } else {
+            nameNetwork += "0"
+            arrayNameNetwork.push("0")
+        }
     }
 
     const process = (object) => {
@@ -84,11 +89,21 @@ export const TableRed = ({ip, mascara}) => {
                     <th className={"h5"}
                         colSpan={4}
                         style={{color: "#b4122f"}}>
-                        Nombre de la Red
+                        Nombre de la Red Binario
                     </th>
                 </tr>
                 <tr>
                     {process(arrayNameNetwork)}
+                </tr>
+                <tr>
+                    <th className={"h5"}
+                        colSpan={4}
+                        style={{color: "#b4122f"}}>
+                        Nombre de la Red Decimal
+                    </th>
+                </tr>
+                <tr>
+                    <NameRed nameNetwork={nameNetwork}/>
                 </tr>
                 </tbody>
             </table>
